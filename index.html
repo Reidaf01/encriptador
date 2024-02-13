@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Online</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+   
+   <!-- fuentes Montserrat, Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Workbench&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<header>
+    <img src="IMG/Logo.png" class="logo" alt="Logo Alura"> <h1>Encriptador online.</h1>
+</header>
+
+<body>
+
+<main>    
+   <section class="cajaTextoUsuario">
+    
+        <div class="textoUsuario">
+
+            <textarea name="textoUsuario" id="textoUsuario" cols="30" rows="10" placeholder="Ingrese su texto aquí"></textarea>
+
+        </div>
+    
+        <div class="indicaciones">
+
+            <p>⚠ Solo letras minúsculas y sin acentos.</p>
+    
+       </div>
+
+        <div class="cajaBotones">
+
+            <button id="encriptar" class="encriptar" onclick="encriptar()">Encriptar</button>
+            <button id="desencriptar" class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+
+        </div>
+    </section>
+      
+   <section class="cajaResultado">
+    <div class="imagen">
+        <img src="IMG/Muñeco.png" id="imagen" alt="Persona con lupa observando un diamante">
+    </div>
+        
+    <div class="mensajeEncriptado" id="mensajeEncriptado">
+        <div class="cajaMensaje">
+            <h2 id="mensaje">Ningún mensaje fue <br>encontrado</h2>
+            <p id="parrafo">Ingrese el texto que desees encriptar o <br>desencriptar</p>
+            <textarea name="resultado" id="resultado" cols="30" rows="10"></textarea>
+        </div>
+
+
+        <div class="cajaBotonCopiar">
+            <button id="copiar" class="copiar" onclick="copiar()">Copiar mensaje secreto</button>
+        </div>
+
+        <div class="cajaTextoResultado">
+            <p class="textoResultado"></p>
+        </div>
+
+    </div>
+    
+    
+    </section>
+</main>
+</body>
+
+<script src="app.js"></script>
+
+</html>
